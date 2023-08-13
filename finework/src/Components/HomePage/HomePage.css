@@ -1,0 +1,65 @@
+.homePage {
+  /* background-color: rgba(7, 59, 7, 0.533); */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: cursive;
+}
+.introductionDiv {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 1px solid red; */
+  background: linear-gradient(rgb(241, 0, 0), rgb(255, 255, 255));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.introContentContainer {
+  height: 70vh;
+  max-width: 420px;
+  color: rgb(0, 0, 0);
+  /* border: 1px solid red; */
+}
+.introContentContainer h1 {
+  font-weight: 900;
+  font-size: 42px;
+}
+.introContentContainer p {
+  font-size: 20px;
+}
+.introimageContainer img {
+  height: 70vh;
+  max-width: 98vw;
+  /* border: 1px solid orange; */
+  object-fit: contain;
+  /* border: 1px solid black; */
+}
+.BusinessSolutionsTilesContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headingContainer {
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  /* border: 1px solid red; */
+}
+.SolutionTilesContainer {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.SolutionTilesContainer::-webkit-scrollbar {
+  display: none;
+}

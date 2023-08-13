@@ -12,6 +12,13 @@ import GemPortal from "./Components/GemPortalServices/GemPortal";
 import DSCServices from "./Components/DSCServices/DSCServices";
 import SupplyManagement from "./Components/SupplyManagement/SupplyManagement";
 import Contact from "./Components/ContactUs/Contact";
+import GSTRegistration from "./Components/RegistrationServices/GSTRegistration";
+import GSTReturn from "./Components/RegistrationServices/GSTReturn";
+import ITRServices from "./Components/RegistrationServices/ITRServices";
+import MSMERegistration from "./Components/RegistrationServices/MSMERegistration";
+import GemCatalogueManagement from "./Components/GemPortalServices/GemCatalogueManagement";
+import Gemregistration from "./Components/GemPortalServices/Gemregistration";
+import GemSeller from "./Components/GemPortalServices/GemSeller";
 
 function App() {
   return (
@@ -26,7 +33,7 @@ function App() {
             path="/registration-services"
             element={<Registration />}
           />
-          <Route exact path="/gem-portal-services" element={<GemPortal />} />
+          {/* <Route exact path="/gem-portal-services" element={<GemPortal />} /> */}
           <Route exact path="/dsc-services" element={<DSCServices />} />
           <Route
             exact
@@ -34,6 +41,41 @@ function App() {
             element={<SupplyManagement />}
           />
           <Route exact path="/contact-us" element={<Contact />} />
+          <Route
+            exact
+            path="/registeration-services/gst-registration"
+            element={<GSTRegistration />}
+          />
+          <Route
+            exact
+            path="/registeration-services/gst-return"
+            element={<GSTReturn />}
+          />
+          <Route
+            exact
+            path="/registeration-services/itr-services"
+            element={<ITRServices />}
+          />
+          <Route
+            exact
+            path="/registeration-services/msme-registration"
+            element={<MSMERegistration />}
+          />
+          <Route
+            exact
+            path="/gem-portal-services/registration"
+            element={<Gemregistration />}
+          />
+          <Route
+            exact
+            path="/gem-portal-services/catalogue-management"
+            element={<GemCatalogueManagement />}
+          />
+          <Route
+            exact
+            path="/gem-portal-services/seller"
+            element={<GemSeller />}
+          />
         </Routes>
       </div>
     </Router>

@@ -5,30 +5,67 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  /* border: 1px solid black; */
-  background-color: #282828;
+  /* border: 5px solid orange; */
+  background: linear-gradient(rgb(1, 1, 1), rgb(13, 13, 14));
   color: antiquewhite !important;
-  height: 60px;
+  max-height: 60px;
   width: auto;
-  text-decoration: none !important;
+  position: sticky;
+  top: 0px;
 }
 .logoContainer {
   /* border: 1px solid red; */
 }
-.NavigationMenu {
+.NavigationMenu > div {
   display: inline-flex;
   height: 100%;
   /* border: 1px solid orange; */
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px 10px;
 }
+
 .navigationTab {
   /* border: 1px solid blue; */
-  height: 40px;
-  margin: 0px 10px;
+  min-height: 40px;
+  margin: 0px 15px;
 }
 .contactUs {
   /* border: 1px solid red; */
+}
+.navigationTab:hover {
+  color: orange;
+}
+.SideNavigationContainer {
+  margin: 0px;
+  height: 99vh;
+  width: 300px;
+  right: 0px;
+  top: 0px;
+  z-index: 1000; /* Set a higher z-index */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  /* border: 5px solid blue; */
+  /* border: 1px solid white; */
+}
+.SideNavigationContainer > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.SideNavigationContainer div {
+  min-height: 50px;
+  font-size: 20px;
+  /* border-bottom: 1px solid; */
+}
+.sideMenuContainer {
+  height: 100%;
+  display: block;
+  /* border: 1px solid white; */
 }
