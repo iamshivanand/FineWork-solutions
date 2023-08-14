@@ -8,7 +8,7 @@ import Navbar from "./Components/NavBar/Navbar";
 import HomePage from "./Components/HomePage/HomePage";
 import DataEntry from "./Components/DataEntryServices/DataEntry";
 import Registration from "./Components/RegistrationServices/Registration";
-import GemPortal from "./Components/GemPortalServices/GemPortal";
+// import GemPortal from "./Components/GemPortalServices/GemPortal";
 import DSCServices from "./Components/DSCServices/DSCServices";
 import SupplyManagement from "./Components/SupplyManagement/SupplyManagement";
 import Contact from "./Components/ContactUs/Contact";
