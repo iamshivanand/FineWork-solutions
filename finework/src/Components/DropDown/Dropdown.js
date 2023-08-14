@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Dropdown.css";
 import { Link } from "react-router-dom";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -28,7 +28,11 @@ const Dropdown = ({ tabs, screenSize }) => {
       onMouseLeave={handleMouseOut}
       onClick={handleclick}
     >
-      <div className="navigationDropdown">
+      <div
+        className="navigationDropdown"
+        onMouseOver={handleMouseOver}
+        onMouseLeave={handleMouseOut}
+      >
         <span className="naviagtionDropdownTitle">{tabs?.maintitle}</span>
         <span className="navigationDropdownIcon">
           {screenSize.width > 1300 ? <ArrowDropDownIcon /> : <AddIcon />}

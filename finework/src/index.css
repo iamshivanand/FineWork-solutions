@@ -5,6 +5,7 @@ body {
     sans-serif, "Cocogoose";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 code {

@@ -4,38 +4,86 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: cursive;
 }
 .introductionDiv {
   width: 100%;
   min-height: 100vh;
   /* border: 1px solid red; */
-  background: linear-gradient(rgb(241, 0, 0), rgb(255, 255, 255));
+  background: linear-gradient(rgb(90, 175, 126), rgb(255, 255, 255));
+}
+.introductionDiv-lg {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
-.introContentContainer {
+.introductionDiv-md {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introductionDiv-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introContentContainer-lg {
   height: 70vh;
   max-width: 420px;
   color: rgb(0, 0, 0);
   /* border: 1px solid red; */
 }
-.introContentContainer h1 {
+.introContentContainer-md {
+  min-height: 50vh;
+  padding: 10px;
+  width: 98%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.introContentContainer-sm {
+  padding: 10px;
+  width: 95%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.introContentContainer-lg h1 {
   font-weight: 900;
   font-size: 42px;
 }
-.introContentContainer p {
+.introContentContainer-md h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+.introContentContainer-sm h1 {
+  font-weight: 900;
+  font-size: 35px;
+}
+.introContentContainer-lg p {
   font-size: 20px;
 }
-.introimageContainer img {
+.introContentContainer-md p {
+  font-size: 16px;
+}
+.introContentContainer-sm p {
+  font-size: 12px;
+}
+.introimageContainer-lg img {
   height: 70vh;
-  max-width: 98vw;
-  /* border: 1px solid orange; */
+  max-width: 98%;
   object-fit: contain;
-  /* border: 1px solid black; */
+}
+.introimageContainer-md img {
+  min-height: 50vh;
+  max-width: 98%;
+  object-fit: contain;
+}
+.introimageContainer-sm img {
+  height: 50vh;
+  max-width: 98%;
+  object-fit: contain;
 }
 .BusinessSolutionsTilesContainer {
   width: 100%;
@@ -44,17 +92,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
 }
-.headingContainer {
+.headingContainer-lg {
   width: 50%;
   text-align: center;
   font-size: 25px;
   /* border: 1px solid red; */
 }
+.headingContainer-md {
+  width: 70%;
+  text-align: center;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+.headingContainer-sm {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  /* border: 1px solid red; */
+}
 .SolutionTilesContainer {
   width: 80vw;
+  /* border: 1px solid red; */
   display: flex;
-  justify-content: center;
   overflow-y: hidden;
   /* hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;

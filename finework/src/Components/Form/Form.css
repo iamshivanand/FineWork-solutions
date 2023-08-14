@@ -1,0 +1,75 @@
+.form-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+.form-image-container {
+  background-color: whitesmoke;
+}
+.form-image-container img {
+  margin-left: 20px;
+  width: 40vw;
+}
+.form-image-container-sm img {
+  margin-left: 20px;
+  width: 90%;
+}
+.form-image-container-md img {
+  margin-left: 20px;
+  width: 90%;
+}
+.actual-form-container {
+  padding: 20px;
+  width: 50vw;
+}
+.actual-form-container-md {
+  padding: 20px;
+  width: 95%;
+}
+.actual-form-container-sm {
+  padding: 20px;
+  width: 95%;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(238, 13, 13); */
+}
+.combine-input {
+  height: 40px;
+  width: 98%;
+
+  margin-bottom: 25px;
+}
+input {
+  height: 95%;
+  width: 100%;
+}
+.name-input {
+}
+.email-input {
+}
+.phone-input {
+}
+.message-input {
+  height: 140px;
+}
+.submit-button {
+  height: 50px;
+  width: 200px;
+  background-color: orange;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
