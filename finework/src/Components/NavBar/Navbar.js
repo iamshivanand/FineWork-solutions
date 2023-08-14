@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -9,7 +9,7 @@ import GSTReturn from "../RegistrationServices/GSTReturn";
 import ITRServices from "../RegistrationServices/ITRServices";
 import MSMERegistration from "../RegistrationServices/MSMERegistration";
 
-const Navbar = () => {
+const Navbar = ({ screenSize }) => {
   const RegistrationServices = {
     maintitle: "RegistrationServices",
     subtitles: [
@@ -48,24 +48,9 @@ const Navbar = () => {
       },
     ],
   };
-  const [screenSize, setScreenSize] = useState(getCurrentDimension());
-  const [showSideNavigation, setShowSideNavigation] = useState(false);
-  function getCurrentDimension() {
-    return {
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-  }
-  useEffect(() => {
-    const updateDimension = () => {
-      setScreenSize(getCurrentDimension());
-    };
-    window.addEventListener("resize", updateDimension);
 
-    return () => {
-      window.removeEventListener("resize", updateDimension);
-    };
-  }, [screenSize]);
+  const [showSideNavigation, setShowSideNavigation] = useState(false);
+
   console.log("hello side", showSideNavigation);
   const menuRendered = () => {
     return (

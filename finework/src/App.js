@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -21,12 +21,33 @@ import Gemregistration from "./Components/GemPortalServices/Gemregistration";
 import GemSeller from "./Components/GemPortalServices/GemSeller";
 
 function App() {
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+  function getCurrentDimension() {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  }
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension());
+    };
+    window.addEventListener("resize", updateDimension);
+
+    return () => {
+      window.removeEventListener("resize", updateDimension);
+    };
+  }, [screenSize]);
   return (
     <Router>
-      <Navbar />
+      <Navbar screenSize={screenSize} />
       <div className="App">
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route
+            exact
+            path="/"
+            element={<HomePage screenSize={screenSize} />}
+          />
           <Route exact path="/data-entry" element={<DataEntry />} />
           <Route
             exact
@@ -40,7 +61,11 @@ function App() {
             path="/supply-management"
             element={<SupplyManagement />}
           />
-          <Route exact path="/contact-us" element={<Contact />} />
+          <Route
+            exact
+            path="/contact-us"
+            element={<Contact screenSize={screenSize?.width} />}
+          />
           <Route
             exact
             path="/registeration-services/gst-registration"
